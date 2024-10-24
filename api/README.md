@@ -1,38 +1,4 @@
 
----
-
-## **Code Explanation**
-
-### **Imports**
-- **`collections.defaultdict`**: Creates a dictionary that provides default values when a key doesn’t exist. In this case, it initializes missing IP entries with `0.0`.
-- **`time`**: Used to track timestamps and measure process duration.
-- **`typing.Dict`**: A type hint specifying that `rate_limit_records` stores IP addresses with their last access time.
-- **`FastAPI`, `Request`, `status`**: Imported from FastAPI to handle requests and manage HTTP status codes.
-- **`BaseHTTPMiddleware`, `RequestResponseEndpoint`**: Middleware classes from Starlette, which FastAPI extends. 
-
----
-
-### **`AdvancedMiddleware` Class**
-This is a custom middleware that:
-1. **Rate Limits** requests to avoid multiple calls within a 5-second window from the same IP.
-2. **Logs requests** to the console.
-3. **Measures processing time** and adds it to the response header.
-
-#### **Constructor (`__init__`)**
-- The constructor initializes the middleware and creates a `rate_limit_records` dictionary to track the last request time for each client IP address.
-
-#### **`dispatch` Method**
-The `dispatch` method is the core of this middleware. It performs the following steps for each incoming request:
-1. **Extracts the client’s IP address** from the request.
-2. **Checks the time since the client’s last request**:
-   - If the request is made within **5 seconds**, it returns an HTTP 429 response (rate-limit exceeded).
-3. **Logs the request URL**.
-4. **Calculates the process time** of the request.
-5. **Adds a custom header (`X-Process-Time`)** to the response.
-6. **Logs the processing time** for each response.
-
----
-
 ### **README.md**
 
 ```markdown
