@@ -1,7 +1,7 @@
 
 ---
 
-```markdown
+
 # Advanced Middleware for FastAPI
 
 This project demonstrates a custom middleware for FastAPI, which includes:
@@ -20,7 +20,7 @@ Install the required libraries:
 
 ```bash
 pip install fastapi uvicorn
-```
+
 
 
 ## Step-by-Step Implementation
