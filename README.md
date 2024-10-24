@@ -1,3 +1,5 @@
+Here’s a **simplified README** that focuses on the **basics of middleware in FastAPI**. It explains what middleware is, how it works, and how to implement a basic middleware.
+
 ---
 
 # **Middleware in FastAPI – A Beginner's Guide**
@@ -16,7 +18,6 @@ Middleware allows you to:
 ## **How Middleware Works in FastAPI**
 
 Middleware is executed **before** and **after** your endpoint logic:
-
 1. A request comes in → **Middleware processes it** → FastAPI endpoint handles it.
 2. Endpoint sends a response → **Middleware processes it again** → Response goes back to the client.
 
@@ -39,13 +40,11 @@ Here’s a simple middleware that **logs every request** and **measures the time
 ### **Step-by-Step Implementation**
 
 1. **Install FastAPI and Uvicorn**:
-
    ```bash
    pip install fastapi uvicorn
    ```
 
 2. **Create Project Structure**:
-
    ```
    /your_project
    ├── main.py
@@ -53,7 +52,6 @@ Here’s a simple middleware that **logs every request** and **measures the time
    ```
 
 3. **Write the Code in `main.py`**:
-
    ```python
    import time
    from fastapi import FastAPI, Request
@@ -91,7 +89,6 @@ Here’s a simple middleware that **logs every request** and **measures the time
    ```
 
 4. **Run the App**:
-
    ```bash
    uvicorn main:app --reload
    ```
@@ -127,7 +124,6 @@ app.add_middleware(Middleware2)
 ## **Conclusion**
 
 Middleware is a powerful tool in FastAPI to:
-
 - Intercept requests and responses.
 - Add custom behavior like logging, monitoring, or rate limiting.
 - Enhance your app’s functionality without modifying the core logic.
@@ -135,3 +131,5 @@ Middleware is a powerful tool in FastAPI to:
 With this basic understanding, you can start building your own middleware for various tasks, such as authentication, security checks, and more!
 
 ---
+
+This is the basic concept of **middleware** in FastAPI. Feel free to modify the example based on your project needs! Let me know if you need more details or advanced examples.
