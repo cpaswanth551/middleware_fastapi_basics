@@ -20,7 +20,7 @@ Install the required libraries:
 
 ```bash
 pip install fastapi uvicorn
-
+```
 
 
 ## Step-by-Step Implementation
