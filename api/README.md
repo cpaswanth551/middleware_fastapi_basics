@@ -1,4 +1,6 @@
 
+---
+
 ```markdown
 # Advanced Middleware for FastAPI
 
@@ -20,7 +22,6 @@ Install the required libraries:
 pip install fastapi uvicorn
 ```
 
----
 
 ## Step-by-Step Implementation
 
