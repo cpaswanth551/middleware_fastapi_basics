@@ -1,6 +1,4 @@
 
-### **README.md**
-
 ```markdown
 # Advanced Middleware for FastAPI
 
