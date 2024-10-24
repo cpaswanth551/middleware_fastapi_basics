@@ -1,4 +1,4 @@
-Here’s a **simplified README** that focuses on the **basics of middleware in FastAPI**. It explains what middleware is, how it works, and how to implement a basic middleware.
+
 
 ---
 
