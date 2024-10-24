@@ -1,0 +1,58 @@
+env# Byte-compiled / compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+.env
+
+# Logs
+logs/
+*.log
+
+# Test cache and coverage
+.cache/
+coverage/
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Docker-related files
+*.pid
+*.tar
+
+
+
+# PyCharm project files
+.idea/
+
+# VSCode project files
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python package-related files
+*.egg-info/
+*.eggs/
+dist/
+build/
+pip-wheel-metadata/
+
+# Mypy static analysis cache
+.mypy_cache/
+
+# Pytest cache
+.pytest_cache/
+
+
+node_modules 
+.vercel
